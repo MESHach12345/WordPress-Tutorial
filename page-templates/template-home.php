@@ -20,17 +20,18 @@ if ( is_front_page() ) {
 
 <div class="home-hero-banner-top">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-8">
+		<div class="row align-items-end">
+			<div class="col-lg-7">
 				<div class="skip-bin-info-holder">
 					<div class="title">
 						<i class="fa fa-arrow-circle-up"></i> Skip Bin Instant Quote
 					</div>
 					<div class="desc">
-						Simply Type your Suburb Above and you will be provided with an instant price.
+						Simply Type your Suburb Above and you will be provided with an instant price across our Range.
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-1"></div>
 			<div class="col-lg-4">
 				<img src="<?php echo get_template_directory_uri() ?>/image/home-hero-right-info.svg" alt="West Coast Info" width="100%">
 			</div>
