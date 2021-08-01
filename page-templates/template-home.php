@@ -21,8 +21,11 @@ if ( is_front_page() ) {
 <div class="home-hero-banner-top">
 	<div class="container">
 		<div class="row align-items-end">
-			<div class="col-lg-7">
+			<div class="col-lg-8 col-xl-7">
 				<div class="skip-bin-info-holder">
+					<div class="overlay-image-arrow">
+						<img src="<?php echo get_template_directory_uri() ?>/image/home-hero-arrow-up.svg" alt="Up Arrow">
+					</div>
 					<div class="title">
 						<i class="fa fa-arrow-circle-up"></i> Skip Bin Instant Quote
 					</div>
@@ -31,12 +34,44 @@ if ( is_front_page() ) {
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-1"></div>
-			<div class="col-lg-4">
-				<img src="<?php echo get_template_directory_uri() ?>/image/home-hero-right-info.svg" alt="West Coast Info" width="100%">
+			<div class="col-lg-4 offset-xl-1">
+				<div class="seven-day-skip-info">
+					<img src="<?php echo get_template_directory_uri() ?>/image/home-hero-right-info.svg" alt="West Coast Info" width="100%">
+					<div class="title">
+						7-Day Skip Bin hire direct to your home covering Perth to Albany
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="home-hero-slider">
+			<div class="slider">
+				<div class="slider-wrapper">
+					<div class="slide">
+						<div class="image">
+
+						</div>
+						<div class="entry-content">
+							<div class="icon">
+								<img src="<?php echo get_template_directory_uri() ?>/image/Tree-truck-01.svg" alt="Truck">
+							</div>
+							<div class="info">
+								We deliver the right skip bin for your residential and commercial projects.
+							</div>
+							<div class="slider-nav">
+								<a href="#"><i class = "fa fa-arrow-circle-left"></i></a>
+								<a href="#"><i class = "fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class="home-product-info">
+	home-product-info
 </div>
 
 <?php

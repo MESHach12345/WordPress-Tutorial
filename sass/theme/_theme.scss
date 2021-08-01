@@ -22,6 +22,8 @@ body {
 	min-height: 8000px;
 }
 
+// font-family: "Just Another Hand", cursive;
+
 .top-header {
 	background: $secondary;
 	height: 115px;
@@ -235,17 +237,29 @@ body {
 
 .home-hero-banner-top {
 
-	margin-top: 100px;
+	margin-top: 110px;
+	@media (max-width: $md) {
+		margin-top: 50px;
+	}
+
 
 	.skip-bin-info-holder {
 		border: 4px dashed $primary;
 		border-radius: 30px;
 		background: $secondary-500;
 		padding: 30px;
+		@media (max-width: $md) {
+			padding: 15px;
+			border-radius: 15px;
+		}
+		position: relative;
 
 		.title {
 			font-weight: bold;
 			font-size: 48px;
+			@media (max-width: $md) {
+				font-size: 30px;
+			}
 			.fa {
 				color: $primary;
 			}
@@ -254,7 +268,129 @@ body {
 		.desc {
 			color: $primary;
 			font-size: 24px;
+			@media (max-width: $md) {
+				font-size: 18px;
+			}
 			font-weight: 300;
 		}
+
+		.overlay-image-arrow {
+			position: absolute;
+			bottom: 100%;
+			left: 53%;
+
+			@media (max-width: $lg) {
+				display: none;
+			}
+
+			img {
+				width: 135px;
+				height: 146px;
+
+			}
+		}
 	}
+
+	.seven-day-skip-info {
+
+		img {
+			@media (max-width:$lg) {
+				display: none;
+			}
+		}
+
+		.title {
+			display: none;
+			@media (max-width:$lg) {
+				display: block;
+			}
+			color: $primary;
+			font-size: 36px;
+			font-family: "Just Another Hand", cursive;
+			margin-top: 15px;
+		}
+	}
+
+	.home-hero-slider {
+
+		margin-top: 50px;
+		border-radius: 30px;
+		overflow: hidden;
+		margin-bottom: -110px;
+		position: relative;
+		@media (max-width: $md) {
+			margin-bottom: -175px;
+			margin-top: 15px;
+		}
+		z-index: 500;
+		.slide {
+
+			.image {
+				height: 420px;
+				background: red;
+				background-image: url(../image/page-placeholder.svg);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				@media (max-width: $lg) {
+					height: 320px;
+				}
+				@media (max-width: $md) {
+					height: 210px;
+				}
+			}
+			.entry-content {
+				background: white;
+				color: black;
+				font-size: 30px;
+				font-weight: bold;
+				display: flex;
+				height: 110px;
+				line-height: 1.15;
+				align-items: center;
+				justify-content: center;
+				@media (max-width: $md) {
+					height: 175px;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: center;
+				}
+				.icon {
+					margin-left: 20px;
+					margin-right: 0;
+					width: 200px;
+					@media (max-width: $lg) {
+						display: none;
+					}
+				}
+				.info {
+					margin-left: 20px;
+					padding-right: 20px;
+					@media (max-width: $lg) {
+						font-size: 24px;
+					}
+				}
+				.slider-nav {
+					display: flex;
+					margin-right: 0.25em;
+					@media (max-width: $md) {
+						margin-top: 5px;
+						margin-left: 15px;
+						margin-right: 0px;
+					}
+					a {
+						margin-right: 0.5em;
+						color: $primary;
+						font-size: 48px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.home-product-info {
+	height: 1000px;
+	background: $primary;
+	padding-top: 200px;
 }
