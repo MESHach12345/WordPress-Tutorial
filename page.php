@@ -19,17 +19,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
+<div class="container">
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+</div>
+
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-
+			<div class="col-lg-8">
 			<main class="site-main" id="main">
-
 				<?php
 				while ( have_posts() ) {
 					the_post();
@@ -41,11 +44,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 					}
 				}
 				?>
-
 			</main><!-- #main -->
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+			</div>
+			<div class="col-lg-4">
+				<div class="right-sidebar-promotion">
+					<div class="discount-circle">
+						<div class="abs-holder">
+							<div class="save">Save</div>
+							<div class="percent">20%</div>
+						</div>
+					</div>
+					<div class="entry-content">
+						<div class="title">15 Day Store Special on 9m3 Skip Bins</div>
+						<div class="desc">BIN SERVICES- Perth, Fremantle, Kwinana, Rockingham, Mandurah, Pinjarra, Waroona, Harvey, Australind, Bunbury, Busselton, Margaret River</div>
+						<a href="#" class="button">Find out more Information</a>
+					</div>
+				</div>
+			</div>
 
 		</div><!-- .row -->
 

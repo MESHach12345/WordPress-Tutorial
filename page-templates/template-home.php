@@ -71,7 +71,24 @@ if ( is_front_page() ) {
 </div>
 
 <div class="home-product-info">
-	home-product-info
+
+	<div class="home-special-offer-background-overlay">
+		<div class="container">
+			<div class="home-special-offer">
+				<div class="discount-circle">
+					<div class="abs-holder">
+						<div class="save">Save</div>
+						<div class="percent">20%</div>
+					</div>
+				</div>
+				<div class="entry-content">
+					<div class="title">15 Day Store Special on 9m3 Skip Bins</div>
+					<div class="desc">BIN SERVICES- Perth, Fremantle, Kwinana, Rockingham, Mandurah, Pinjarra, Waroona, Harvey, Australind, Bunbury, Busselton, Margaret River</div>
+					<a href="#" class="button">Find out more Information</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <?php
